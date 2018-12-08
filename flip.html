@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    @import url(//fonts.googleapis.com/css?family=Lato:400,900);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+.info-card {
+    float: left;
+  margin: 10px;
+  -webkit-perspective: 600px;
+}
+
+.front, .back {
+  background: #FFF;
+  border-radius: 10px;
+  transition: -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  border: 1px solid black;
+}
+
+.front {
+  overflow: hidden;
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  z-index: 1;
+}
+
+.back {
+  padding: 20px;
+  padding-top: 0px;
+  width: 300px;
+  height: 350px;
+  -webkit-transform: rotateY(-180deg);
+  overflow: scroll;
+}
+
+.info-card:hover .back {
+  -webkit-transform: rotateY(0);
+}
+
+.info-card:hover .front {
+  -webkit-transform: rotateY(180deg);
+}
+
+.card-image {
+width: 100%;
+height: 100%;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+  <div class="row">
+    <h2>Info Card Flip</h2>
+     
+
+
+    <!-- Scrolling enabled for longer content -->
+
+<div class="info-card">
+        <div class="front">
+          <img class="card-image" src="images/rael.jpg?1">
+        </div>
+      <div class="back">
+        <h2>Rael Njiru</h2>
+        <p style="text-align: justify;">
+         In her is a combination of passion, skills, knowledge and experience that makes it all magical when it comes to interacting with teens. Rael is divinely gifted with ability to connect with teens, build trust based relationships that not only inspire but positively challenge teens for excellence. Her excellence in academic, walk with God and other aspects of life makes teens desire to identify with her. Jokingly, if you find her in the midst of teens, you will think she is the youngest of all. 
+
+        
+        </p>
+      </div><p><b>Njiru Rael</b></p>
+      <p style="font-style: italic;">Lead Coach</p>
+    </div>
+
+    <div class="info-card">
+        <div class="front">
+          <img class="card-image" src="images/matende.jpg?1">
+        </div>
+      <div class="back">
+        <h2>Samwel Matende</h2>
+        <p style="text-align: justify;">
+         Of all the attributes to notice about Sam, is the fatherhood spirit in him. He has a heart for teens. A father of 2 teenagers and patron of the KCA University Christian Union. He is true mentor to both the young and the old. He provides insights on concept development, execution and evaluation. It’s amazing to know that he was once voted by his own son to be one of the adults selected to attend a teens forum! No greater evidence of fatherhood than this!
+
+        
+        </p>
+      </div><p><b>Samwel Matende, IT Consultant</b></p>
+      <p style="font-style: italic;">Advisor on concept development, execution and evaluation</p>
+    </div>
+
+    <div class="info-card">
+        <div class="front">
+          <img class="card-image" src="images/ashitiva.jpg?1">
+        </div>
+      <div class="back">
+        <h2>Nelson Ashitiva</h2>
+        <p style="text-align: justify;">
+          He may appear quiet but has great passion for the young generation. He is poised with great humility, excellence and wisdom that makes him a role model to reckon with. A mentor at Kingdom Boardroom youth, a business empowerment forum for youths, at Hekima Centre and the patron of the Young Lawyers Association. His fatherhood spirit is evident in all those whom he rubs shoulders with. What a gift to Teens Armor! He offers insights on strategic planning. 
+
+        
+        </p>
+      </div><p><b>Esq. Nelson Ashitiva, Advocate</b></p>
+      <p style="font-style: italic;">Advisor on strategic planning</p>
+    </div>
+</div>
+</body>
+</html>
